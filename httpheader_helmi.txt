@@ -1,0 +1,80 @@
+Analisa pengaksesan login pada twitter
+
+
+REQUEST
+-----------------------
+
+http://twitter.com/
+
+GET /i/timeline?composed_count=0&include_available_features=1&include_entities=1&include_new_items_bar=true&interval=30000&latent_count=2&since_id=383236569710096384 HTTP/1.1
+--method HTTP yang digunakan untuk meminta resource tertentu dari server --
+
+Host: twitter.com
+--Host merupakan nama komputer. Pemberian nama ini spesifik, untuk satu komputer tertentu saja dalam suatu jaringan--
+
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:22.0) Gecko/20100101 Firefox/22.0
+--User Agent merupakan identitas dari browser yang sedang digunakan, disini User menggunakan browser Mozilla Firefox User Agent berupa sederatan kode string informasi yang dikirim ke web server dari browser yang kita gunakan saat mengakses sebuah halaman web <<
+
+Accept: application/json, text/javascript, */*; q=0.01
+--server dapat menerima aplikasi json dan teks javascript--
+
+Accept-Language: en-US,en;q=0.5
+--server dapat menerima bahasa "english-United Stated--
+
+Accept-Encoding: gzip, deflate
+--header accept-Encoding: untuk menerima pengkodean gzip, deflate dalam permintaan HTTP. GZIP adalah metode kompresi yang paling efektif yang tersedia saat ini--
+
+X-Twitter-Polling: true
+
+X-Requested-With: XMLHttpRequest
+
+Referer: https://twitter.com/
+--Referer digunakan untuk menunjuk alamat web yang diminta--
+
+Cookie: guest_id=v1%3A136689476162779621; __utma=43838368.1840499336.1366894885.1367846405.1380205500.22; __utmz=43838368.1367679526.18.6.utmcsr=home.mywebsearch.com|utmccn=(referral)|utmcmd=referral|utmcct=/index.jhtml; twll=l%3D1380205616; remember_checked=1; secure_session=true; remember_checked_on=1; pid=v3:1370090466732026250522696; _twitter_sess=BAh7CzoJdXNlcmkEL58PHzoQc3RheV9zZWN1cmVUOg9jcmVhdGVkX2F0bCsI%250AR2CoWkEBOgdpZCIlNDZmN2Y1YTc5NmEzODc0NGNkODY2ZmRiZGJkYmE4MTI6%250ADGNzcmZfaWQiJTIyNGNjNWZhNzhhYWQyMmJlYmQ5NTUyZmZjYzQ4OTk5Igpm%250AbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAG%250AOgpAdXNlZHsA--a5a75fb9bdc5775e6bfc4d53e507705fe6a40576; __utmb=43838368.3.10.1380205500; __utmc=43838368; mindsparktb_200781283=true; mindsparktbsupport_200781283=true; auth_token=e889eac3595c734eb5e153e06710ae247422b2d7; twid=u%3D521117487%7CYXqOvEqrMFAPgizAFweckdIT4vk%3D; lang=en; original_referer=padhuUp37zi4XoWogyFqcGgJdw+JPXpx
+
+Connection: keep-alive
+--Koneksi yang dapat diakses--
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+RESPON
+-----------------------
+
+HTTP/1.1 200 OK
+--Koneksi yang dapat diakses--
+
+Cache-Control: no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+
+Content-Encoding: deflate
+
+Content-Type: text/javascript; charset=utf-8
+--Content-Type berupa text javascript--
+
+Date: Thu, 26 Sep 2013 14:28:52 GMT
+--Waktu User saat mengakses twitter--
+
+Expires: Tue, 31 Mar 1981 05:00:00 GMT
+--Masa aktif pengaksesan twitter--
+
+Last-Modified: Thu, 26 Sep 2013 14:28:52 GMT
+--Masa sebelum pengaksesan twitter yang sama--
+
+ms: A
+
+Pragma: no-cache
+
+Server: tfe
+--Servernya berupa tfe--
+
+Set-Cookie: _twitter_sess=BAh7CzoJdXNlcmkEL58PHzoQc3RheV9zZWN1cmVUOg9jcmVhdGVkX2F0bCsI%250AR2CoWkEBOgdpZCIlNDZmN2Y1YTc5NmEzODc0NGNkODY2ZmRiZGJkYmE4MTI6%250ADGNzcmZfaWQiJTIyNGNjNWZhNzhhYWQyMmJlYmQ5NTUyZmZjYzQ4OTk5Igpm%250AbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAG%250AOgpAdXNlZHsA--a5a75fb9bdc5775e6bfc4d53e507705fe6a40576; Path=/; Domain=.twitter.com; Secure; HTTPOnly
+
+Status: 200 OK
+--statusnya OK--
+
+Strict-Transport-Security: max-age=631138519
+
+x-transaction: efd95994ec1b14f9
+
+X-Firefox-Spdy: 3
+-----------------------------------------------------------------------
